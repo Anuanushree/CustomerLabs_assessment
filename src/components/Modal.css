@@ -1,0 +1,165 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Background blur effect */
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: flex-end; /* Align modal to the right */
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  width: 30%; /* Increased modal width */
+  height: 100%; /* Full height */
+  background: #ffffff;
+  border-left: 4px solid #007bff; /* Blue border */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  overflow-y: auto; /* Allow scrolling for long content */
+}
+
+/* Blue Box */
+.blue-box {
+  background-color: #f0f8ff;
+  padding: 10px;
+  border: 2px solid #007bff; /* Blue border around the Blue Box */
+  border-radius: 5px;
+  margin-bottom: 20px;
+  max-height: 200px; /* Limit height with scrolling */
+  overflow-y: auto; /* Scroll if content exceeds */
+}
+
+/* Dropdown Row */
+.dropdown-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dropdown-row select {
+  flex: 1;
+  margin-right: 10px;
+  padding: 15px;
+  margin: 10px;
+}
+
+/* Remove Button */
+.remove-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  /* padding: 5px 10px; */
+  padding-bottom: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 50px;
+}
+
+.remove-button:hover {
+  background-color: #c82333;
+}
+
+/* Add Schema Section (Below Blue Box) */
+.add-schema-container {
+  margin-top: 20px;
+}
+
+.add-schema-container select {
+  margin-right: 10px;
+  padding: 8px;
+  width: 100%;
+}
+
+.add-schema {
+  color: #28a745;
+
+  margin-top: 20px;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  display: flex;
+}
+
+/* Close Button */
+.close-button {
+  margin-top: auto;
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #c82333;
+}
+
+/* Save Segment Button */
+.save-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 150px;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+/* Close Button */
+.close-button {
+  margin-top: auto;
+  background-color: #dc3545; /* Red background */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+
+  text-align: center; /* Center text */
+}
+
+.close-button:hover {
+  background-color: #c82333;
+}
+
+.segment-name {
+  padding: 20px;
+  margin: 10px;
+}
+
+.segment-buttons-container {
+  display: flex;
+  bottom: 0;
+}
+.top-nav1 {
+  margin: 0;
+  background-color: #359db2;
+  color: #f0f8ff;
+  margin-bottom: 30px;
+  font-size: small;
+  width: 120%;
+  margin-left: -20px;
+  display: flex;
+  text-align: left;
+}
+
+#segment-label {
+  text-align: left;
+}
