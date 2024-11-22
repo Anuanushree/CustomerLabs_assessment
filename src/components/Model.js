@@ -79,7 +79,7 @@ function Modal({ onClose }) {
       return;
     }
 
-    // Format schema as required
+
     const schema = dropdowns.map((dropdown) => ({
       [dropdown.value]: dropdown.label,
     }));
@@ -111,7 +111,7 @@ function Modal({ onClose }) {
 
     saveData();
 
-    // onClose();
+    onClose();
   };
 
   return (
